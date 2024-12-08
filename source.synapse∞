@@ -1,0 +1,344 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Panel = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Inner = Instance.new("Frame")
+local exec = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local rpos = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local clr = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local HighlightLabel = Instance.new("TextLabel")
+local csl = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local DropShadowHolder = Instance.new("Frame")
+local DropShadow = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local title = Instance.new("TextLabel")
+local DropShadowHolder_2 = Instance.new("Frame")
+local DropShadow_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Panel.Name = "Panel"
+Panel.Parent = ScreenGui
+Panel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Panel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Panel.BorderSizePixel = 0
+Panel.Position = UDim2.new(0.0529217198, 0, 0.102564104, 0)
+Panel.Size = UDim2.new(0.523756921, 0, 0.0897435918, 0)
+
+UICorner.Parent = Panel
+
+Inner.Name = "Inner"
+Inner.Parent = Panel
+Inner.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Inner.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inner.BorderSizePixel = 0
+Inner.Position = UDim2.new(0, 0, 0.799862444, 0)
+Inner.Size = UDim2.new(1, 0, 5.35714293, 0)
+
+exec.Name = "exec"
+exec.Parent = Inner
+exec.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+exec.BackgroundTransparency = 0.900
+exec.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exec.BorderSizePixel = 0
+exec.Position = UDim2.new(0.0527426153, 0, 0.801815808, 0)
+exec.Size = UDim2.new(0.270042181, 0, 0.129999995, 0)
+exec.Font = Enum.Font.GothamBold
+exec.Text = "Execute"
+exec.TextColor3 = Color3.fromRGB(0, 0, 0)
+exec.TextScaled = true
+exec.TextSize = 14.000
+exec.TextWrapped = true
+
+UICorner_2.Parent = exec
+
+rpos.Name = "rpos"
+rpos.Parent = Inner
+rpos.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+rpos.BackgroundTransparency = 0.900
+rpos.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rpos.BorderSizePixel = 0
+rpos.Position = UDim2.new(0.377350926, 0, 0.801815808, 0)
+rpos.Size = UDim2.new(0.244725734, 0, 0.129999995, 0)
+rpos.Font = Enum.Font.GothamBold
+rpos.Text = "Reset GUI Position"
+rpos.TextColor3 = Color3.fromRGB(0, 0, 0)
+rpos.TextScaled = true
+rpos.TextSize = 14.000
+rpos.TextWrapped = true
+
+UICorner_3.Parent = rpos
+
+clr.Name = "clr"
+clr.Parent = Inner
+clr.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+clr.BackgroundTransparency = 0.900
+clr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+clr.BorderSizePixel = 0
+clr.Position = UDim2.new(0.680921555, 0, 0.801815808, 0)
+clr.Size = UDim2.new(0.263713092, 0, 0.129999995, 0)
+clr.Font = Enum.Font.GothamBold
+clr.Text = "Clear"
+clr.TextColor3 = Color3.fromRGB(0, 0, 0)
+clr.TextScaled = true
+clr.TextSize = 14.000
+clr.TextWrapped = true
+
+UICorner_4.Parent = clr
+
+TextBox.Parent = Inner
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 0.900
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0527426153, 0, 0.0366666652, 0)
+TextBox.Size = UDim2.new(0.892405093, 0, 0.726666689, 0)
+TextBox.Font = Enum.Font.GothamBold
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.PlaceholderText = "-- Synapse INF"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_5.Parent = TextBox
+
+HighlightLabel.Name = "HighlightLabel"
+HighlightLabel.Parent = Inner
+HighlightLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HighlightLabel.BackgroundTransparency = 1.000
+HighlightLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HighlightLabel.BorderSizePixel = 0
+HighlightLabel.Position = UDim2.new(0.0509980917, 0, 0.0355769843, 0)
+HighlightLabel.Size = UDim2.new(0.892405093, 0, 0.726666689, 0)
+HighlightLabel.Font = Enum.Font.GothamBold
+HighlightLabel.Text = ""
+HighlightLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+HighlightLabel.TextScaled = true
+HighlightLabel.TextSize = 14.000
+HighlightLabel.TextWrapped = true
+
+csl.Name = "csl"
+csl.Parent = Inner
+csl.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+csl.BackgroundTransparency = 0.900
+csl.BorderColor3 = Color3.fromRGB(0, 0, 0)
+csl.BorderSizePixel = 0
+csl.Position = UDim2.new(0.668263316, 0, -0.138184205, 0)
+csl.Size = UDim2.new(0.263713092, 0, 0.129999995, 0)
+csl.Font = Enum.Font.GothamBold
+csl.Text = "Console"
+csl.TextColor3 = Color3.fromRGB(0, 0, 0)
+csl.TextScaled = true
+csl.TextSize = 14.000
+csl.TextWrapped = true
+
+UICorner_6.Parent = csl
+
+DropShadowHolder.Name = "DropShadowHolder"
+DropShadowHolder.Parent = Inner
+DropShadowHolder.BackgroundTransparency = 1.000
+DropShadowHolder.BorderSizePixel = 0
+DropShadowHolder.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder.ZIndex = 0
+
+DropShadow.Name = "DropShadow"
+DropShadow.Parent = DropShadowHolder
+DropShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow.BackgroundTransparency = 1.000
+DropShadow.BorderSizePixel = 0
+DropShadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow.Size = UDim2.new(1.09915614, 0, 1.15666664, 0)
+DropShadow.ZIndex = 0
+DropShadow.Image = "rbxassetid://6014261993"
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow.ImageTransparency = 0.500
+DropShadow.ScaleType = Enum.ScaleType.Slice
+DropShadow.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UIAspectRatioConstraint.Parent = DropShadowHolder
+UIAspectRatioConstraint.AspectRatio = 1.580
+
+UIAspectRatioConstraint_2.Parent = Inner
+UIAspectRatioConstraint_2.AspectRatio = 1.580
+
+title.Name = "title"
+title.Parent = Panel
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.0178892892, 0, 0.0695059672, 0)
+title.Size = UDim2.new(0.379746825, 0, 0.714285731, 0)
+title.Font = Enum.Font.GothamBold
+title.Text = "Synapse ∞"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+DropShadowHolder_2.Name = "DropShadowHolder"
+DropShadowHolder_2.Parent = Panel
+DropShadowHolder_2.BackgroundTransparency = 1.000
+DropShadowHolder_2.BorderSizePixel = 0
+DropShadowHolder_2.Size = UDim2.new(1, 0, 1, 0)
+DropShadowHolder_2.ZIndex = 0
+
+DropShadow_2.Name = "DropShadow"
+DropShadow_2.Parent = DropShadowHolder_2
+DropShadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+DropShadow_2.BackgroundTransparency = 1.000
+DropShadow_2.BorderSizePixel = 0
+DropShadow_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+DropShadow_2.Size = UDim2.new(1, 47, 1, 47)
+DropShadow_2.ZIndex = 0
+DropShadow_2.Image = "rbxassetid://6014261993"
+DropShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+DropShadow_2.ImageTransparency = 0.500
+DropShadow_2.ScaleType = Enum.ScaleType.Slice
+DropShadow_2.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UIAspectRatioConstraint_3.Parent = DropShadowHolder_2
+UIAspectRatioConstraint_3.AspectRatio = 8.464
+
+UIAspectRatioConstraint_4.Parent = Panel
+UIAspectRatioConstraint_4.AspectRatio = 8.464
+
+-- Scripts:
+
+local function MPBMVAH_fake_script() -- exec.LocalScript 
+	local script = Instance.new('LocalScript', exec)
+
+	script.Parent.Parent.exec.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Parent.TextBox)()
+	end)
+end
+coroutine.wrap(MPBMVAH_fake_script)()
+local function NKVF_fake_script() -- rpos.LocalScript 
+	local script = Instance.new('LocalScript', rpos)
+
+	script.Parent.Parent.rpos.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.ScreenGui.Panel.Position = UDim2.new(0.053, 0, 0.103, 0)
+	end)
+end
+coroutine.wrap(NKVF_fake_script)()
+local function ZRNGV_fake_script() -- clr.LocalScript 
+	local script = Instance.new('LocalScript', clr)
+
+	script.Parent.Parent.clr.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(ZRNGV_fake_script)()
+local function LCJV_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local highlighter = loadstring(game:HttpGet("https://raw.githubusercontent.com/pkplaysrblx/Synapse-INF/refs/heads/main/syntax.synapse∞"))() -- Ensure the module is correctly required
+	local textbox = script.Parent.Parent.TextBox -- The TextBox where the user types
+	local highlightingLabel = script.Parent.Parent.HighlightLabel -- The TextLabel that will show the highlighted result
+	
+	-- Enable RichText for TextLabel to allow color formatting
+	highlightingLabel.RichText = true
+	
+	-- Debounce settings
+	local debounceTime = 0 -- Time to wait before updating (in seconds)
+	local lastInputTime = 0
+	
+	-- Make the TextBox text invisible (fully transparent)
+	textbox.TextTransparency = 1
+	textbox.TextStrokeTransparency = 0.5 -- Add some stroke to make text more defined
+	textbox.TextSize = 18 -- Set a fixed text size for clearer text (optional)
+	textbox.TextScaled = true -- Keep TextScaled enabled for mobile responsiveness
+	
+	-- Function to update the highlighted text in the TextLabel
+	local function updateHighlightedText()
+		local sourceText = textbox.Text
+		local highlightedText = highlighter.run(sourceText) -- Apply the highlighter module
+	
+		-- Set the highlighted text to the TextLabel (rich text)
+		highlightingLabel.Text = highlightedText
+		print(textbox.Text)
+	end
+	
+	-- Function to update text after a delay (debounced)
+	local function onTextChanged()
+		local currentTime = tick()  -- Current time in seconds
+	
+		-- Check if enough time has passed since the last update
+		if currentTime - lastInputTime >= debounceTime then
+			-- Update the highlighted text in the label
+			updateHighlightedText()
+	
+			-- Record the time of the last input update
+			lastInputTime = currentTime
+		end
+	end
+	
+	-- Run the update function when the text in the TextBox changes
+	textbox:GetPropertyChangedSignal("Text"):Connect(onTextChanged)
+	
+	
+	
+	
+end
+coroutine.wrap(LCJV_fake_script)()
+local function FHLKSYP_fake_script() -- csl.LocalScript 
+	local script = Instance.new('LocalScript', csl)
+
+	script.Parent.Parent.csl.MouseButton1Click:Connect(function()
+		local v = game:GetService("VirtualInputManager")
+		v:SendKeyEvent(true, Enum.KeyCode.F9, false, game)
+	end)
+end
+coroutine.wrap(FHLKSYP_fake_script)()
+local function CDHWTOJ_fake_script() -- Panel.LocalScript 
+	local script = Instance.new('LocalScript', Panel)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(CDHWTOJ_fake_script)()
